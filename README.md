@@ -1,30 +1,50 @@
-# FashionMNIST Models
+# 👕 FashionMNIST Models using PyTorch
 
-This project explores and compares three deep learning models built using PyTorch to classify clothing images from the FashionMNIST dataset:
+This project contains three different deep learning models built and trained on the FashionMNIST dataset using PyTorch. It includes a basic linear model, a two-layer neural network, and a convolutional neural network (CNN) for image classification.
 
-- 🔹 **Linear Model** — A simple logistic regression approach using fully connected layers.
-- 🔹 **MLP (Multilayer Perceptron)** — A deeper feedforward network with one or more hidden layers.
-- 🔹 **CNN (Convolutional Neural Network)** — A convolution-based architecture suitable for image data.
+## 📚 Models
 
-## 🧪 Dataset
-FashionMNIST consists of 28×28 grayscale images of 10 fashion categories such as shirts, shoes, trousers, etc.
+1. **FashionMNISTmodel**  
+   A simple fully connected network (single hidden layer).
 
-## 📊 Goal
-The goal is to evaluate and compare model performances in terms of accuracy, loss, and prediction quality on a held-out test set.
+2. **FashionMNISTNon**  
+   A two-layer fully connected network with ReLU activations.
 
-## 📦 Tools & Libraries
-- PyTorch
-- Matplotlib
-- NumPy
+3. **FashionMNISTcnn**  
+   A convolutional neural network built with multiple convolutional and pooling layers for better feature extraction.
 
-## 🚀 How to Run
-```bash
-# clone the repository
-git clone https://github.com/yourusername/fashion-mnist-models.git
-cd fashion-mnist-models
+## 🧠 Dataset
 
-# install dependencies
-pip install -r requirements.txt
+The [FashionMNIST dataset](https://github.com/zalandoresearch/fashion-mnist) is a drop-in replacement for the original MNIST dataset, consisting of grayscale 28×28 pixel images of 10 different types of clothing:
 
-# run the training script
-python train.py
+- T-shirt/top
+- Trouser
+- Pullover
+- Dress
+- Coat
+- Sandal
+- Shirt
+- Sneaker
+- Bag
+- Ankle boot
+
+## 🛠️ Project Features
+
+- Model training and evaluation with PyTorch
+- Random test sample predictions with visualizations
+- Accuracy comparison between models
+- Custom CNN model with `nn.Conv2d`, `nn.MaxPool2d`, and `nn.Sequential`
+
+## 🖼️ Sample Prediction Plot
+
+Each subplot shows predicted vs true label with color indication:
+
+- ✅ Green → Correct Prediction
+- ❌ Red → Wrong Prediction
+
+## 🧪 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/fashionmnist-models-pytorch.git
+   cd fashionmnist-models-pytorch
